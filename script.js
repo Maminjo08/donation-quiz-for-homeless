@@ -52,8 +52,9 @@ function showQuestion() {
     });
     
     // Setze das Feedback-Element zurück
-    document.getElementById("answer-feedback").textContent = "";
-    document.getElementById("answer-feedback").style.color = "black"; // Reset Farbe
+    const feedbackElement = document.getElementById("answer-feedback");
+    feedbackElement.textContent = "";
+    feedbackElement.style.color = "black"; // Reset Farbe
 }
 
 // Überprüfe die Antwort

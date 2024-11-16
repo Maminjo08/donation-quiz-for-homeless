@@ -8,11 +8,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
 
 /* Startseite Styling */
 #start-page {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Styling für den Button "Start Quiz to Donate" */
@@ -24,7 +26,7 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 8px;
-    font-family: 'Amasis MT Pro Black', sans-serif; /* Schriftart für den Button */
+    font-family: 'Amasis MT Pro Black', sans-serif;
 }
 
 #start-btn:hover {
@@ -34,18 +36,20 @@ body {
 /* Quiz-Seite Styling */
 #quiz-page {
     text-align: center;
+    width: 100%;
 }
 
 /* Styling für die Antwort-Buttons */
 .answer-btn {
     background-color: #008CBA;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 18px;
     border: none;
     cursor: pointer;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 15px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 .answer-btn:hover {
@@ -55,6 +59,8 @@ body {
 /* Styling für das Ergebnis */
 #result-page {
     text-align: center;
+    width: 100%;
+    padding: 20px;
 }
 
 /* Styling für die Überschrift */
@@ -65,19 +71,32 @@ h2 {
 
 /* Schriftart und Größe für die Fragen */
 #question {
-    font-family: 'Bahnschrift', sans-serif; /* Schriftart für Fragen */
-    font-weight: semi-bold; /* Halbfett für die Fragen */
-    font-size: 48px; /* Schriftgröße für die Fragen */
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: semi-bold;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
 /* Styling für das Antwort-Feedback */
 #answer-feedback {
-    font-size: 20px; /* Die Schriftgröße für das Feedback */
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 20px;
     font-weight: bold;
     text-align: center;
     padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styling für das "korrekt"/"falsch" Feedback */
+#answer-feedback.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#answer-feedback.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
 /* Allgemeine Buttons */
@@ -88,7 +107,7 @@ button {
 /* Responsives Design für kleinere Bildschirme */
 @media (max-width: 600px) {
     #question {
-        font-size: 30px; /* Kleinere Schriftgröße für kleine Bildschirme */
+        font-size: 30px;
     }
     #start-btn, .answer-btn {
         padding: 12px 24px;
