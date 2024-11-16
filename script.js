@@ -1,33 +1,3 @@
-// Quiz processing logic
-
-document.getElementById('quiz-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Correct answers
-    const answers = {
-        q1: 'Zagreb',
-        q2: '10000',
-        q3: '200000'
-    };
-
-    let score = 0;
-
-    // Check the answers
-    if (document.querySelector('input[name="q1"]:checked')?.value === answers.q1) {
-        score++;
-    }
-    if (document.querySelector('input[name="q2"]:checked')?.value === answers.q2) {
-        score++;
-    }
-    if (document.querySelector('input[name="q3"]:checked')?.value === answers.q3) {
-        score++;
-    }
-
-    // Show result
-    const resultText = score === 3 ? 'Congratulations, you have completed the quiz successfully!' : `You got ${score} out of 3 questions correct.`;
-    document.getElementById('result').innerText = resultText;
-});
-
 // Fragen und Antworten
 const questions = [
     {
@@ -48,7 +18,7 @@ const questions = [
             C: "Dollar",
             D: "Pound"
         },
-        correctAnswer: "B"
+        correctAnswer: "A"
     },
     {
         question: "What is the largest city in Croatia?",
@@ -67,8 +37,8 @@ let score = 0;
 
 // Start the quiz
 function startQuiz() {
-    document.getElementById("start-page").style.display = "none";
-    document.getElementById("quiz-page").style.display = "block";
+    document.getElementById("start-page").style.display = "none"; // Verstecke die Startseite
+    document.getElementById("quiz-page").style.display = "block"; // Zeige das Quiz
     showQuestion();
 }
 
@@ -106,8 +76,8 @@ function checkAnswer(answer) {
 
 // Zeige das Ergebnis
 function showResult() {
-    document.getElementById("quiz-page").style.display = "none";
-    document.getElementById("result-page").style.display = "block";
+    document.getElementById("quiz-page").style.display = "none"; // Verstecke das Quiz
+    document.getElementById("result-page").style.display = "block"; // Zeige das Ergebnis
     document.getElementById("score").textContent = `${score} out of ${questions.length}`;
 }
 
