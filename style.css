@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+.submit-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styling for the donation section */
+.donation {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #ffecb3;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#donate-btn {
+    background-color: #007bff;
+}
+
+#donate-btn:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#start-page {
+    text-align: center;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+#quiz-page {
+    text-align: center;
+}
+
+.answer-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.answer-btn:hover {
+    background-color: #005f75;
+}
+
+#result-page {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}

@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Quiz for Homeless People and Children in Croatia</h1>
-        <p>Answer the questions and help raise money for a good cause!</p>
+        <p>Answer the questions and help raise awareness for a good cause!</p>
 
         <!-- Quiz Questions -->
         <form id="quiz-form">
@@ -53,9 +53,48 @@
         <!-- Donation Section -->
         <div class="donation">
             <h2>Donate to the Cause!</h2>
-            <p>You can now donate directly to help the homeless and children in need.</p>
-            <button id="donate-btn">Donate Now</button>
+            <p>Your donation can help make a difference in the lives of homeless people and children in Croatia.</p>
+            <!-- Donation Button (currently without actual link) -->
+            <button id="donate-btn" onclick="alert('Donation functionality coming soon!')">Donate Now</button>
         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Startseite -->
+    <div id="start-page">
+        <h1>Welcome to the Donation Quiz!</h1>
+        <button id="start-btn" onclick="startQuiz()">Start Quiz to Donate</button>
+    </div>
+
+    <!-- Fragen-Seite -->
+    <div id="quiz-page" style="display: none;">
+        <div id="question-container">
+            <p id="question"></p>
+            <button class="answer-btn" onclick="checkAnswer('A')">A</button>
+            <button class="answer-btn" onclick="checkAnswer('B')">B</button>
+            <button class="answer-btn" onclick="checkAnswer('C')">C</button>
+            <button class="answer-btn" onclick="checkAnswer('D')">D</button>
+        </div>
+    </div>
+
+    <!-- Ergebnis-Seite -->
+    <div id="result-page" style="display: none;">
+        <h2>Your Score:</h2>
+        <p id="score"></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
     </div>
 
     <script src="script.js"></script>
