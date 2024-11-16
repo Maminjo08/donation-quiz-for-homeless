@@ -1,3 +1,4 @@
+/* Allgemeines Styling für die Seite */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f4f8;
@@ -9,10 +10,12 @@ body {
     margin: 0;
 }
 
+/* Startseite Styling */
 #start-page {
     text-align: center;
 }
 
+/* Styling für den Button "Start Quiz to Donate" */
 #start-btn {
     background-color: #4CAF50;
     color: white;
@@ -21,16 +24,19 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 8px;
+    font-family: 'Amasis MT Pro Black', sans-serif; /* Schriftart für den Button */
 }
 
 #start-btn:hover {
     background-color: #45a049;
 }
 
+/* Quiz-Seite Styling */
 #quiz-page {
     text-align: center;
 }
 
+/* Styling für die Antwort-Buttons */
 .answer-btn {
     background-color: #008CBA;
     color: white;
@@ -46,11 +52,49 @@ body {
     background-color: #005f75;
 }
 
+/* Styling für das Ergebnis */
 #result-page {
     text-align: center;
 }
 
+/* Styling für die Überschrift */
 h2 {
     font-size: 30px;
     margin-bottom: 20px;
+}
+
+/* Schriftart und Größe für die Fragen */
+#question {
+    font-family: 'Bahnschrift', sans-serif; /* Schriftart für Fragen */
+    font-weight: semi-bold; /* Halbfett für die Fragen */
+    font-size: 48px; /* Schriftgröße für die Fragen */
+    margin-bottom: 20px;
+}
+
+/* Styling für das Antwort-Feedback */
+#answer-feedback {
+    font-size: 20px; /* Die Schriftgröße für das Feedback */
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Allgemeine Buttons */
+button {
+    cursor: pointer;
+}
+
+/* Responsives Design für kleinere Bildschirme */
+@media (max-width: 600px) {
+    #question {
+        font-size: 30px; /* Kleinere Schriftgröße für kleine Bildschirme */
+    }
+    #start-btn, .answer-btn {
+        padding: 12px 24px;
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 24px;
+    }
 }

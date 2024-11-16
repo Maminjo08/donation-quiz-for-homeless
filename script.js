@@ -18,7 +18,7 @@ const questions = [
             C: "Dollar",
             D: "Pound"
         },
-        correctAnswer: "A"
+        correctAnswer: "B"
     },
     {
         question: "What is the largest city in Croatia?",
@@ -50,6 +50,10 @@ function showQuestion() {
         const option = ['A', 'B', 'C', 'D'][index];
         btn.textContent = question.options[option];
     });
+    
+    // Setze das Feedback-Element zurück
+    document.getElementById("answer-feedback").textContent = "";
+    document.getElementById("answer-feedback").style.color = "black"; // Reset Farbe
 }
 
 // Überprüfe die Antwort
@@ -57,12 +61,16 @@ function checkAnswer(answer) {
     const question = questions[currentQuestionIndex];
     const isCorrect = answer === question.correctAnswer;
     
+    const feedbackElement = document.getElementById("answer-feedback");
+
     // Punktestand aktualisieren
     if (isCorrect) {
         score++;
-        alert("Correct!");
+        feedbackElement.textContent = "Correct!"; // Feedback anzeigen
+        feedbackElement.style.color = "green"; // Feedback grün färben
     } else {
-        alert(`Incorrect! The correct answer is: ${question.correctAnswer}`);
+        feedbackElement.textContent = `Incorrect! The correct answer is: ${question.correctAnswer}`; // Feedback anzeigen
+        feedbackElement.style.color = "red"; // Feedback rot färben
     }
     
     // Gehe zur nächsten Frage oder zum Ergebnis
