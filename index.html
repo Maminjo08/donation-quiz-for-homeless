@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz for Homeless People and Children in Croatia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz for Homeless People and Children in Croatia</h1>
+        <p>Answer the questions and help raise money for a good cause!</p>
+
+        <!-- Quiz Questions -->
+        <form id="quiz-form">
+            <div class="question">
+                <label>1. What is the capital of Croatia?</label><br>
+                <input type="radio" id="q1a" name="q1" value="Zagreb">
+                <label for="q1a">Zagreb</label><br>
+                <input type="radio" id="q1b" name="q1" value="Split">
+                <label for="q1b">Split</label><br>
+                <input type="radio" id="q1c" name="q1" value="Dubrovnik">
+                <label for="q1c">Dubrovnik</label><br>
+            </div>
+
+            <div class="question">
+                <label>2. How many homeless people are there in Croatia?</label><br>
+                <input type="radio" id="q2a" name="q2" value="10000">
+                <label for="q2a">10,000</label><br>
+                <input type="radio" id="q2b" name="q2" value="5000">
+                <label for="q2b">5,000</label><br>
+                <input type="radio" id="q2c" name="q2" value="15000">
+                <label for="q2c">15,000</label><br>
+            </div>
+
+            <div class="question">
+                <label>3. How many children live below the poverty line in Croatia?</label><br>
+                <input type="radio" id="q3a" name="q3" value="200000">
+                <label for="q3a">200,000</label><br>
+                <input type="radio" id="q3b" name="q3" value="100000">
+                <label for="q3b">100,000</label><br>
+                <input type="radio" id="q3c" name="q3" value="300000">
+                <label for="q3c">300,000</label><br>
+            </div>
+
+            <div class="submit-section">
+                <button type="submit" id="submit-btn">Submit Quiz</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+
+        <!-- Donation Section -->
+        <div class="donation">
+            <h2>Donate to the Cause!</h2>
+            <p>You can now donate directly to help the homeless and children in need.</p>
+            <button id="donate-btn">Donate Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
